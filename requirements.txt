@@ -1,0 +1,16 @@
+asgiref==3.7.2
+dataclasses==0.6
+Django==4.2.6
+django-widget-tweaks==1.5.0
+djangorestframework==3.14.0
+djongo==1.2.31
+dnspython==2.4.2
+drf-yasg==1.21.7
+inflection==0.5.1
+packaging==23.2
+pymongo==4.5.0
+pytz==2023.3.post1
+PyYAML==6.0.1
+sqlparse==0.4.4
+tzdata==2023.3
+uritemplate==4.1.1
