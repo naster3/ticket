@@ -1,0 +1,35 @@
+{% extends "users/base.html" %}
+{% load widget_tweaks %}
+
+{% block content %}
+<div class="card mx-auto">
+    <div class="card-body">
+    <h5 class="card-title mb-3">registro</h5>
+<form method="POST">
+   {% csrf_token %}
+        
+    <div class="mb-3">
+        <Label for='exampleInputEmail'class="form-label">Email</label>
+           {% render_field form.email class='form-control' %} 
+            
+        </div>
+        <div class="mb-3">
+            <Label for='exampleInputEmail'class="form-label">Username</label>
+               {% render_field form.username class='form-control' %} 
+                
+            </div>
+            <div class="mb-3">
+                <Label for='exampleInputEmail'class="form-label">Password</label>
+                   {% render_field form.password1 class='form-control' %} 
+                    
+                </div>
+                <div class="mb-3">
+                    <Label for='exampleInputEmail'class="form-label">Confirm Password</label>
+                       {% render_field form.password2 class='form-control' %} 
+                        
+                    </div>
+    <button  type='submit'class='btn btn-primary'>submit</button>
+</form>
+    </div>
+</div>
+{% endblock content %}
